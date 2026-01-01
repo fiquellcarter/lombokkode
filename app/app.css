@@ -10,6 +10,9 @@
   --secondary: oklch(0.278 0.033 256.848);
   --secondary-foreground: oklch(0.985 0.002 247.839);
 
+  --muted: oklch(0.985 0.002 247.839);
+  --muted-foreground: oklch(0.446 0.03 256.802);
+
   --accent: oklch(0.985 0.002 247.839);
   --accent-foreground: oklch(0.278 0.033 256.848);
 
@@ -31,6 +34,9 @@
 
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
 
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
@@ -57,11 +63,15 @@
   }
 
   body {
-    @apply bg-background text-foreground selection:bg-primary selection:text-primary-foreground relative;
+    @apply relative bg-background text-foreground selection:bg-primary selection:text-primary-foreground;
   }
 
   button:not(:disabled),
   [role="button"]:not(:disabled) {
     @apply cursor-pointer;
+  }
+
+  .lucide {
+    @apply size-4;
   }
 }
