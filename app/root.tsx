@@ -13,6 +13,9 @@ import "~/app.css";
 
 import type { PropsWithChildren } from "react";
 
+import { Heading } from "~/components/vorent/heading";
+import { Text } from "~/components/vorent/text";
+
 export function meta(): Route.MetaDescriptors {
   return [
     {
@@ -68,8 +71,8 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 
   return (
     <main className="container pt-16">
-      <h1>{message}</h1>
-      <p>{details}</p>
+      <Heading level={2}>{message}</Heading>
+      <Text>{details}</Text>
     </main>
   );
 }
