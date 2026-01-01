@@ -23,7 +23,7 @@ export function AccordionItem({
   return (
     <BaseAccordion.Item
       data-slot="accordion-item"
-      className={cn("border-border bg-background/40 rounded-md border", className)}
+      className={cn("rounded-md border border-border bg-background/40", className)}
       {...props}
     />
   );
@@ -45,12 +45,20 @@ export function AccordionTrigger({
     <BaseAccordion.Trigger
       data-slot="accordion-trigger"
       className={cn(
-        "group text-foreground focus-visible:ring-ring focus-visible:ring-offset-background data-panel-open:text-primary flex w-full items-center justify-between gap-4 rounded-md p-6 text-left font-medium transition-colors duration-200 ease-in-out focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50",
+        "group flex w-full items-center justify-between gap-4 rounded-md p-6 text-left font-medium text-foreground transition-colors duration-200 ease-in-out",
+        "focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
+        "disabled:pointer-events-none disabled:opacity-50",
+        "data-panel-open:text-primary",
         className
       )}
       {...props}>
       {children}
-      <ChevronDown className="pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200 ease-in-out group-data-panel-open:rotate-180" />
+      <ChevronDown
+        className={cn(
+          "pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200 ease-in-out",
+          "group-data-panel-open:rotate-180"
+        )}
+      />
     </BaseAccordion.Trigger>
   );
 }
@@ -64,11 +72,13 @@ export function AccordionPanel({
     <BaseAccordion.Panel
       data-slot="accordion-panel"
       className={cn(
-        "h-(--accordion-panel-height) overflow-hidden transition-[height] duration-200 ease-in-out data-ending-style:h-0 data-starting-style:h-0",
+        "h-(--accordion-panel-height)",
+        "overflow-hidden transition-[height] duration-200 ease-in-out",
+        "data-ending-style:h-0 data-starting-style:h-0",
         className
       )}
       {...props}>
-      <div data-slot="accordion-panel-content" className="px-6 pt-2 pb-6">
+      <div data-slot="accordion-panel-content" className="px-6 pt-1 pb-6">
         {children}
       </div>
     </BaseAccordion.Panel>

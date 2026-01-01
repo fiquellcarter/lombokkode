@@ -48,8 +48,8 @@ export function Heading({
     render,
     props: {
       "data-slot": "heading",
-      ...props,
       className: cn(headingVariants({ size: finalSize }), className),
+      ...props,
     },
   });
 }
