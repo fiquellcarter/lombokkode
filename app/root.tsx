@@ -48,7 +48,7 @@ export function Layout({ children }: PropsWithChildren) {
         <Links />
       </head>
       <body>
-        {children}
+        <div className="root">{children}</div>
         <ScrollRestoration />
         <Scripts />
       </body>
