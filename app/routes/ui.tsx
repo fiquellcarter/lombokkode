@@ -1,4 +1,4 @@
-import { Sparkles } from "lucide-react";
+import { Bell, Heart, MoreHorizontal, Sparkles } from "lucide-react";
 
 import {
   Accordion,
@@ -8,12 +8,74 @@ import {
   AccordionTrigger,
 } from "~/components/vorent/accordion";
 import { Button } from "~/components/vorent/button";
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardIcon,
+  CardTitle,
+} from "~/components/vorent/card";
 import { Heading } from "~/components/vorent/heading";
 import { Small, Text, TextLink } from "~/components/vorent/text";
 
 export default function UI() {
   return (
     <main className="container flex flex-col gap-16 py-16">
+      <div className="flex flex-col items-center gap-2">
+        <Card className="w-full max-w-xl">
+          <CardHeader>
+            <CardIcon>
+              <Bell />
+            </CardIcon>
+            <CardTitle>Card Title</CardTitle>
+            <CardDescription>Card Description</CardDescription>
+          </CardHeader>
+        </Card>
+        <Card className="w-full max-w-xl">
+          <CardHeader>
+            <CardTitle>Card Title</CardTitle>
+            <CardDescription>Card Description</CardDescription>
+            <CardAction>
+              <Button variant="outline" size="icon-sm">
+                <MoreHorizontal />
+              </Button>
+              <Button variant="outline" size="icon-sm">
+                <Heart />
+              </Button>
+            </CardAction>
+          </CardHeader>
+          <CardContent>
+            <Text>Card Content</Text>
+          </CardContent>
+          <CardFooter>
+            <Text>Card Footer</Text>
+            <Text>Card Footer</Text>
+          </CardFooter>
+        </Card>
+        <Card className="w-full max-w-xl">
+          <CardHeader>
+            <CardIcon>
+              <Bell />
+            </CardIcon>
+            <CardTitle>Card Title</CardTitle>
+            <CardDescription>Card Description</CardDescription>
+            <CardAction>
+              <Button variant="outline" size="icon-sm">
+                <MoreHorizontal />
+              </Button>
+            </CardAction>
+          </CardHeader>
+          <CardContent>
+            <Text>Card Content</Text>
+          </CardContent>
+          <CardFooter>
+            <Text>Card Footer</Text>
+          </CardFooter>
+        </Card>
+      </div>
       <div className="flex justify-center">
         <Accordion className="w-full max-w-xl">
           <AccordionItem>
