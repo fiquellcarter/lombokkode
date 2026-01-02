@@ -19,11 +19,105 @@ import {
   CardTitle,
 } from "~/components/vorent/card";
 import { Heading } from "~/components/vorent/heading";
+import { ScrollArea } from "~/components/vorent/scroll-area";
 import { Small, Text, TextLink } from "~/components/vorent/text";
 
 export default function UI() {
   return (
     <main className="container flex flex-col gap-16 py-16">
+      <div className="flex flex-col items-center gap-2">
+        <ScrollArea className="size-96 rounded-md border">
+          <div className="p-4">
+            <ul className="grid grid-cols-[repeat(10,5rem)] grid-rows-[repeat(10,5rem)] gap-4">
+              {Array.from({ length: 100 }, (_, index) => (
+                <li
+                  key={index}
+                  className="flex items-center justify-center rounded-md bg-secondary text-secondary-foreground">
+                  {index + 1}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </ScrollArea>
+        <ScrollArea scrollbar={false} className="h-52 w-full rounded-md border">
+          <div className="flex flex-col gap-2 p-4">
+            <Text>
+              Biocentrism is a philosophical worldview that places biological life at the center of
+              its value system, asserting that all living beings have inherent worth and moral
+              standing. Unlike anthropocentrism, which prioritizes human interests and regards the
+              environment and non-human life mainly in terms of their utility to humans, biocentrism
+              recognizes the intrinsic value of all living organisms, from the smallest bacterium to
+              the largest mammal.
+            </Text>
+            <Text>
+              The roots of biocentrism are found in various ancient and indigenous traditions that
+              hold the natural world in deep reverence. In modern philosophy, biocentrism emerged as
+              an environmental ethic in response to growing concerns about biodiversity loss,
+              climate change, and the destructive impacts of human activity on ecosystems.
+            </Text>
+            <Text>
+              Key to biocentrism is the idea that humans are not separate from or superior to other
+              forms of life, but rather part of a complex, interconnected web. This perspective
+              argues for moral consideration and respect for all living beings, not just humans.
+              Ethical implications of biocentrism challenge us to rethink practices such as
+              deforestation, industrial agriculture, and animal exploitation, urging policies and
+              actions that protect the welfare and habitats of all life forms.
+            </Text>
+            <Text>
+              Critics of biocentrism contend that it may be impractical to grant equal moral status
+              to all living things, especially when the interests of different organisms conflict.
+              However, proponents argue that shifting toward a biocentric mindset is necessary for
+              sustainability and the long-term health of the planet.
+            </Text>
+            <Text>
+              In conclusion, biocentrism offers a compelling alternative to traditional
+              human-centered ethics, encouraging a deeper appreciation and responsibility for the
+              living world. By embracing biocentric values, we move toward a more just and
+              ecologically balanced future, where the flourishing of all life is our collective
+              concern.
+            </Text>
+          </div>
+        </ScrollArea>
+        <ScrollArea className="h-52 w-full rounded-md border">
+          <div className="flex flex-col gap-2 p-4">
+            <Text>
+              Biocentrism is a philosophical worldview that places biological life at the center of
+              its value system, asserting that all living beings have inherent worth and moral
+              standing. Unlike anthropocentrism, which prioritizes human interests and regards the
+              environment and non-human life mainly in terms of their utility to humans, biocentrism
+              recognizes the intrinsic value of all living organisms, from the smallest bacterium to
+              the largest mammal.
+            </Text>
+            <Text>
+              The roots of biocentrism are found in various ancient and indigenous traditions that
+              hold the natural world in deep reverence. In modern philosophy, biocentrism emerged as
+              an environmental ethic in response to growing concerns about biodiversity loss,
+              climate change, and the destructive impacts of human activity on ecosystems.
+            </Text>
+            <Text>
+              Key to biocentrism is the idea that humans are not separate from or superior to other
+              forms of life, but rather part of a complex, interconnected web. This perspective
+              argues for moral consideration and respect for all living beings, not just humans.
+              Ethical implications of biocentrism challenge us to rethink practices such as
+              deforestation, industrial agriculture, and animal exploitation, urging policies and
+              actions that protect the welfare and habitats of all life forms.
+            </Text>
+            <Text>
+              Critics of biocentrism contend that it may be impractical to grant equal moral status
+              to all living things, especially when the interests of different organisms conflict.
+              However, proponents argue that shifting toward a biocentric mindset is necessary for
+              sustainability and the long-term health of the planet.
+            </Text>
+            <Text>
+              In conclusion, biocentrism offers a compelling alternative to traditional
+              human-centered ethics, encouraging a deeper appreciation and responsibility for the
+              living world. By embracing biocentric values, we move toward a more just and
+              ecologically balanced future, where the flourishing of all life is our collective
+              concern.
+            </Text>
+          </div>
+        </ScrollArea>
+      </div>
       <div className="flex flex-col items-center gap-2">
         <Card className="w-full max-w-xl">
           <CardHeader>
