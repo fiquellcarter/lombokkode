@@ -6,12 +6,12 @@ import { cn } from "~/lib/utils";
 export const headingVariants = cva("font-semibold tracking-tight", {
   variants: {
     size: {
-      sm: "text-base sm:text-lg",
-      md: "text-lg sm:text-xl",
-      lg: "text-xl sm:text-2xl",
-      xl: "text-2xl sm:text-3xl md:text-4xl",
-      xxl: "text-3xl sm:text-4xl md:text-5xl",
-      xxxl: "text-4xl sm:text-5xl md:text-6xl",
+      sm: ["text-base", "sm:text-lg"],
+      md: ["text-lg", "sm:text-xl"],
+      lg: ["text-xl", "sm:text-2xl"],
+      xl: ["text-2xl", "sm:text-3xl", "md:text-4xl"],
+      xxl: ["text-3xl", "sm:text-4xl", "md:text-5xl"],
+      xxxl: ["text-4xl", "sm:text-5xl", "md:text-6xl"],
     },
   },
   defaultVariants: {
