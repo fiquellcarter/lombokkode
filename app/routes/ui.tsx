@@ -21,6 +21,7 @@ import {
 } from "~/components/vorent/card";
 import { Heading } from "~/components/vorent/heading";
 import { ScrollArea } from "~/components/vorent/scroll-area";
+import { Separator } from "~/components/vorent/separator";
 import { Small, Text, TextLink } from "~/components/vorent/text";
 
 export default function UI() {
@@ -31,16 +32,19 @@ export default function UI() {
           <AvatarImage src="https://github.com/fiquellcarter.png" alt="@fiquellcarter" />
           <AvatarFallback>FI</AvatarFallback>
         </Avatar>
+        <Separator orientation="vertical" />
         <Avatar size="sm">
           <AvatarImage src="https://github.com/0xk4ll.png" alt="@0xk4ll" />
           <AvatarFallback>0X</AvatarFallback>
         </Avatar>
+        <Separator orientation="vertical" />
         <div className="flex -space-x-2">
           <Avatar>LK</Avatar>
           <Avatar className="bg-blue-500 text-white">DO</Avatar>
           <Avatar className="bg-red-500 text-white">RE</Avatar>
           <Avatar className="bg-orange-500 text-white">MI</Avatar>
         </div>
+        <Separator orientation="vertical" />
         <div className="flex -space-x-2">
           <Avatar>
             <AvatarImage src="https://github.com/ifyyn.png" alt="@ifyyn" />
@@ -113,6 +117,7 @@ export default function UI() {
             </Text>
           </div>
         </ScrollArea>
+        <Separator />
         <ScrollArea className="h-52 w-full rounded-md border">
           <div className="flex flex-col gap-4 p-4">
             <Text>
