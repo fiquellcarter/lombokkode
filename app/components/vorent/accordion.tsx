@@ -23,7 +23,7 @@ export function AccordionItem({
   return (
     <BaseAccordion.Item
       data-slot="accordion-item"
-      className={cn("rounded-md border border-border bg-background/40", className)}
+      className={cn("rounded-md border bg-background/40", className)}
       {...props}
     />
   );
