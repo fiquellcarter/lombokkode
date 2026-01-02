@@ -7,6 +7,7 @@ import {
   AccordionPanel,
   AccordionTrigger,
 } from "~/components/vorent/accordion";
+import { Avatar, AvatarFallback, AvatarImage } from "~/components/vorent/avatar";
 import { Button } from "~/components/vorent/button";
 import {
   Card,
@@ -25,7 +26,41 @@ import { Small, Text, TextLink } from "~/components/vorent/text";
 export default function UI() {
   return (
     <main className="container flex flex-col gap-16 py-16">
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex items-center justify-center gap-4">
+        <Avatar size="lg">
+          <AvatarImage src="https://github.com/fiquellcarter.png" alt="@fiquellcarter" />
+          <AvatarFallback>FI</AvatarFallback>
+        </Avatar>
+        <Avatar size="sm">
+          <AvatarImage src="https://github.com/0xk4ll.png" alt="@0xk4ll" />
+          <AvatarFallback>0X</AvatarFallback>
+        </Avatar>
+        <div className="flex -space-x-2">
+          <Avatar>LK</Avatar>
+          <Avatar className="bg-blue-500 text-white">DO</Avatar>
+          <Avatar className="bg-red-500 text-white">RE</Avatar>
+          <Avatar className="bg-orange-500 text-white">MI</Avatar>
+        </div>
+        <div className="flex -space-x-2">
+          <Avatar>
+            <AvatarImage src="https://github.com/ifyyn.png" alt="@ifyyn" />
+            <AvatarFallback>IF</AvatarFallback>
+          </Avatar>
+          <Avatar>
+            <AvatarImage src="https://github.com/izmahaerill.png" alt="@izmahaerill" />
+            <AvatarFallback>IZ</AvatarFallback>
+          </Avatar>
+          <Avatar>
+            <AvatarImage src="https://github.com/fiquellcarter.png" alt="@fiquellcarter" />
+            <AvatarFallback>FI</AvatarFallback>
+          </Avatar>
+          <Avatar>
+            <AvatarImage src="https://github.com/0xk4ll.png" alt="@0xk4ll" />
+            <AvatarFallback>0X</AvatarFallback>
+          </Avatar>
+        </div>
+      </div>
+      <div className="flex flex-col items-center gap-4">
         <ScrollArea className="size-96 rounded-md border">
           <div className="p-4">
             <ul className="grid grid-cols-[repeat(10,5rem)] grid-rows-[repeat(10,5rem)] gap-4">
@@ -40,7 +75,7 @@ export default function UI() {
           </div>
         </ScrollArea>
         <ScrollArea scrollbar={false} className="h-52 w-full rounded-md border">
-          <div className="flex flex-col gap-2 p-4">
+          <div className="flex flex-col gap-4 p-4">
             <Text>
               Biocentrism is a philosophical worldview that places biological life at the center of
               its value system, asserting that all living beings have inherent worth and moral
@@ -79,7 +114,7 @@ export default function UI() {
           </div>
         </ScrollArea>
         <ScrollArea className="h-52 w-full rounded-md border">
-          <div className="flex flex-col gap-2 p-4">
+          <div className="flex flex-col gap-4 p-4">
             <Text>
               Biocentrism is a philosophical worldview that places biological life at the center of
               its value system, asserting that all living beings have inherent worth and moral
@@ -118,7 +153,7 @@ export default function UI() {
           </div>
         </ScrollArea>
       </div>
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-4">
         <Card className="w-full max-w-xl">
           <CardHeader>
             <CardIcon>
@@ -247,8 +282,8 @@ export default function UI() {
           Phasellus non risus purus. Morbi id nulla ac mi viverra.
         </Heading>
       </div>
-      <div className="flex flex-col gap-2">
-        <div className="flex items-center gap-2">
+      <div className="flex flex-col gap-4">
+        <div className="flex items-center gap-4">
           <Button variant="primary" size="sm">
             Primary
           </Button>
@@ -268,7 +303,7 @@ export default function UI() {
             <Sparkles />
           </Button>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           <Button variant="secondary" size="sm">
             Secondary
           </Button>
@@ -288,7 +323,7 @@ export default function UI() {
             <Sparkles />
           </Button>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           <Button variant="outline" size="sm">
             Outline
           </Button>
@@ -308,7 +343,7 @@ export default function UI() {
             <Sparkles />
           </Button>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           <Button variant="ghost" size="sm">
             Ghost
           </Button>
@@ -328,7 +363,7 @@ export default function UI() {
             <Sparkles />
           </Button>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-4">
           <Button variant="primary" size="sm" block>
             Block
           </Button>
