@@ -11,8 +11,6 @@ import type { Route } from "./+types/root";
 
 import "~/app.css";
 
-import type { PropsWithChildren } from "react";
-
 import { Heading } from "~/components/vorent/heading";
 import { Text } from "~/components/vorent/text";
 
@@ -41,7 +39,7 @@ export function links(): Route.LinkDescriptors {
   ];
 }
 
-export function Layout({ children }: PropsWithChildren) {
+export function Layout({ children }: React.PropsWithChildren) {
   return (
     <html lang="en">
       <head>
