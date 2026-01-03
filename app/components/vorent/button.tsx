@@ -26,7 +26,7 @@ export const buttonVariants = cva(
           "aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
         ],
         outline: [
-          "border-border bg-background/40",
+          "border-border bg-background",
           "hover:bg-accent/80 hover:text-accent-foreground",
           "active:bg-accent/75",
           "aria-expanded:bg-accent aria-expanded:text-accent-foreground",

@@ -7,7 +7,7 @@ export function Testimoni({ className, ...props }: React.ComponentProps<"div">) 
   return (
     <div
       data-slot="testimoni"
-      className={cn("relative rounded-md border bg-background/40", className)}
+      className={cn("relative rounded-md border bg-card text-card-foreground", className)}
       {...props}
     />
   );

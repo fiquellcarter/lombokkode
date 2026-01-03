@@ -16,6 +16,9 @@
   --accent: oklch(0.8287 0.1147 58.0523);
   --accent-foreground: oklch(0.3325 0.0194 2.7074);
 
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.3325 0.0194 2.7074);
+
   --border: oklch(0.9296 0.037 38.6868);
   --ring: oklch(0.7357 0.1641 34.7091);
 
@@ -40,6 +43,9 @@
 
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
 
   --color-border: var(--border);
   --color-ring: var(--ring);

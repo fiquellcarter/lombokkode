@@ -24,7 +24,7 @@ export function AccordionItem({
   return (
     <BaseAccordion.Item
       data-slot="accordion-item"
-      className={cn("rounded-md border bg-background/40", className)}
+      className={cn("rounded-md border bg-card text-card-foreground", className)}
       {...props}
     />
   );
