@@ -308,6 +308,23 @@ export default function UI() {
             </CardIcon>
             <CardTitle>Card Title</CardTitle>
             <CardDescription>Card Description</CardDescription>
+            <CardAction>
+              <Button variant="outline" size="icon-sm">
+                <MoreHorizontal />
+              </Button>
+            </CardAction>
+          </CardHeader>
+          <CardContent>
+            <Text>Card Content</Text>
+          </CardContent>
+        </Card>
+        <Card className="w-full max-w-xl">
+          <CardHeader>
+            <CardIcon>
+              <Bell />
+            </CardIcon>
+            <CardTitle>Card Title</CardTitle>
+            <CardDescription>Card Description</CardDescription>
           </CardHeader>
         </Card>
         <Card className="w-full max-w-xl">
