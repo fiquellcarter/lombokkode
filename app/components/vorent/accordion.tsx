@@ -46,7 +46,7 @@ export function AccordionTrigger({
     <BaseAccordion.Trigger
       data-slot="accordion-trigger"
       className={cn(
-        "group flex w-full items-center justify-between gap-4 rounded-md p-6 font-medium text-foreground transition-colors duration-200 ease-in-out",
+        "group flex w-full items-center justify-between gap-4 rounded-md p-6 text-left font-medium text-foreground transition-colors duration-200 ease-in-out",
         "focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
         "disabled:pointer-events-none disabled:opacity-50",
         "data-panel-open:text-primary",
