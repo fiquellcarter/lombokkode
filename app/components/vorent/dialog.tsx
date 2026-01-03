@@ -55,9 +55,9 @@ export function DialogPopup({
   );
 }
 
-export function DialogHeader({ className, ...props }: React.ComponentProps<"header">) {
+export function DialogHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (
-    <header
+    <div
       data-slot="dialog-header"
       className={cn(
         "grid auto-rows-min gap-4 p-6",
@@ -127,9 +127,9 @@ export function DialogContent({ className, ...props }: React.ComponentProps<"div
   return <div data-slot="dialog-content" className={cn("px-6 pb-6", className)} {...props} />;
 }
 
-export function DialogFooter({ className, ...props }: React.ComponentProps<"footer">) {
+export function DialogFooter({ className, ...props }: React.ComponentProps<"div">) {
   return (
-    <footer
+    <div
       data-slot="dialog-footer"
       className={cn("flex items-center gap-2 px-6 pb-6", className)}
       {...props}

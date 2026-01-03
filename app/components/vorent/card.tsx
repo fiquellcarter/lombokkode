@@ -13,9 +13,9 @@ export function Card({ className, ...props }: React.ComponentProps<"div">) {
   );
 }
 
-export function CardHeader({ className, ...props }: React.ComponentProps<"header">) {
+export function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (
-    <header
+    <div
       data-slot="card-header"
       className={cn(
         "grid auto-rows-min gap-4 p-6",
@@ -78,9 +78,9 @@ export function CardContent({ className, ...props }: React.ComponentProps<"div">
   return <div data-slot="card-content" className={cn("px-6 pb-6", className)} {...props} />;
 }
 
-export function CardFooter({ className, ...props }: React.ComponentProps<"footer">) {
+export function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
   return (
-    <footer
+    <div
       data-slot="card-footer"
       className={cn("flex items-center gap-2 px-6 pb-6", className)}
       {...props}
