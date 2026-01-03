@@ -42,7 +42,7 @@ export function TestimoniMedia({ className, ...props }: React.ComponentProps<"di
   return (
     <div
       data-slot="testimoni-media"
-      className={cn("col-start-1 row-span-2 row-start-1 self-center", className)}
+      className={cn("row-span-2 self-center", className)}
       {...props}
     />
   );
@@ -52,11 +52,7 @@ export function TestimoniTitle({ className, ...props }: React.ComponentProps<"h5
   return (
     <h5
       data-slot="testimoni-title"
-      className={cn(
-        "has-data-[slot='testimoni-media']:col-start-2",
-        headingVariants({ size: "md" }),
-        className
-      )}
+      className={cn(headingVariants({ size: "md" }), className)}
       {...props}
     />
   );
@@ -66,11 +62,7 @@ export function TestimoniMeta({ className, ...props }: React.ComponentProps<"p">
   return (
     <p
       data-slot="testimoni-meta"
-      className={cn(
-        "text-sm leading-relaxed text-muted-foreground",
-        "has-data-[slot='testimoni-media']:col-start-2",
-        className
-      )}
+      className={cn("text-sm leading-relaxed text-muted-foreground", className)}
       {...props}
     />
   );

@@ -1,3 +1,5 @@
+import * as React from "react";
+
 import { headingVariants } from "~/components/vorent/heading";
 import { cn } from "~/lib/utils";
 
@@ -30,7 +32,7 @@ export function CardIcon({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="card-icon"
       className={cn(
-        "mb-4 flex size-12 items-center justify-center rounded-sm bg-primary/10 text-primary transition-transform duration-200 ease-in-out",
+        "flex size-12 items-center justify-center rounded-sm bg-primary/10 text-primary transition-transform duration-200 ease-in-out",
         "group-hover:scale-105",
         className
       )}
@@ -43,11 +45,7 @@ export function CardTitle({ className, ...props }: React.ComponentProps<"h5">) {
   return (
     <h5
       data-slot="card-title"
-      className={cn(
-        "has-data-[slot='card-action']:col-start-1",
-        headingVariants({ size: "md" }),
-        className
-      )}
+      className={cn(headingVariants({ size: "md" }), className)}
       {...props}
     />
   );
@@ -57,11 +55,7 @@ export function CardDescription({ className, ...props }: React.ComponentProps<"p
   return (
     <p
       data-slot="card-description"
-      className={cn(
-        "text-sm leading-relaxed text-muted-foreground",
-        "has-data-[slot='card-action']:col-start-1",
-        className
-      )}
+      className={cn("text-sm leading-relaxed text-muted-foreground", className)}
       {...props}
     />
   );
