@@ -43,7 +43,11 @@ export function CardTitle({ className, ...props }: React.ComponentProps<"h5">) {
   return (
     <h5
       data-slot="card-title"
-      className={cn(headingVariants({ size: "md" }), className)}
+      className={cn(
+        "has-data-[slot='card-action']:col-start-1",
+        headingVariants({ size: "md" }),
+        className
+      )}
       {...props}
     />
   );
@@ -53,7 +57,11 @@ export function CardDescription({ className, ...props }: React.ComponentProps<"p
   return (
     <p
       data-slot="card-description"
-      className={cn("leading-relaxed text-muted-foreground", className)}
+      className={cn(
+        "text-sm leading-relaxed text-muted-foreground",
+        "has-data-[slot='card-action']:col-start-1",
+        className
+      )}
       {...props}
     />
   );
@@ -73,14 +81,14 @@ export function CardAction({ className, ...props }: React.ComponentProps<"div">)
 }
 
 export function CardContent({ className, ...props }: React.ComponentProps<"div">) {
-  return <div data-slot="card-content" className={cn("px-6", className)} {...props} />;
+  return <div data-slot="card-content" className={cn("px-6 pb-6", className)} {...props} />;
 }
 
 export function CardFooter({ className, ...props }: React.ComponentProps<"footer">) {
   return (
     <footer
       data-slot="card-footer"
-      className={cn("flex items-center gap-2 p-6", className)}
+      className={cn("flex items-center gap-2 px-6 pb-6", className)}
       {...props}
     />
   );
