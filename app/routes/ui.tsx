@@ -19,6 +19,18 @@ import {
   CardIcon,
   CardTitle,
 } from "~/components/vorent/card";
+import {
+  Dialog,
+  DialogAction,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogPopup,
+  DialogTitle,
+  DialogTrigger,
+} from "~/components/vorent/dialog";
 import { Heading } from "~/components/vorent/heading";
 import { ScrollArea } from "~/components/vorent/scroll-area";
 import { Separator } from "~/components/vorent/separator";
@@ -27,6 +39,61 @@ import { Small, Text, TextLink } from "~/components/vorent/text";
 export default function UI() {
   return (
     <main className="container flex flex-col gap-16 py-16">
+      <div className="flex justify-center gap-4">
+        <Dialog>
+          <DialogTrigger>Nested</DialogTrigger>
+          <DialogPopup>
+            <DialogHeader>
+              <DialogTitle>Title</DialogTitle>
+              <DialogDescription>Description</DialogDescription>
+              <DialogAction>
+                <DialogClose>Close</DialogClose>
+              </DialogAction>
+            </DialogHeader>
+            <DialogContent>
+              <Text>Content</Text>
+            </DialogContent>
+            <DialogFooter>
+              <Dialog>
+                <DialogTrigger>More</DialogTrigger>
+                <DialogPopup>
+                  <DialogHeader>
+                    <DialogTitle>Title</DialogTitle>
+                    <DialogDescription>Description</DialogDescription>
+                    <DialogAction>
+                      <DialogClose>Close</DialogClose>
+                    </DialogAction>
+                  </DialogHeader>
+                  <DialogContent>
+                    <Text>Content</Text>
+                  </DialogContent>
+                  <DialogFooter>
+                    <Text>Footer</Text>
+                  </DialogFooter>
+                </DialogPopup>
+              </Dialog>
+            </DialogFooter>
+          </DialogPopup>
+        </Dialog>
+        <Dialog>
+          <DialogTrigger>Open</DialogTrigger>
+          <DialogPopup>
+            <DialogHeader>
+              <DialogTitle>Title</DialogTitle>
+              <DialogDescription>Description</DialogDescription>
+              <DialogAction>
+                <DialogClose>Close</DialogClose>
+              </DialogAction>
+            </DialogHeader>
+            <DialogContent>
+              <Text>Content</Text>
+            </DialogContent>
+            <DialogFooter>
+              <Text>Footer</Text>
+            </DialogFooter>
+          </DialogPopup>
+        </Dialog>
+      </div>
       <div className="flex items-center justify-center gap-4">
         <Avatar size="lg">
           <AvatarImage src="https://github.com/fiquellcarter.png" alt="@fiquellcarter" />
