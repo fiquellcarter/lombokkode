@@ -1,23 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --background: oklch(0.985 0.002 247.839);
-  --foreground: oklch(0.278 0.033 256.848);
+  --background: oklch(0.9856 0.0084 56.3169);
+  --foreground: oklch(0.3325 0.0194 2.7074);
 
-  --primary: oklch(0.705 0.213 47.604);
-  --primary-foreground: oklch(0.985 0.002 247.839);
+  --primary: oklch(0.7357 0.1641 34.7091);
+  --primary-foreground: oklch(1 0 0);
 
-  --secondary: oklch(0.278 0.033 256.848);
-  --secondary-foreground: oklch(0.985 0.002 247.839);
+  --secondary: oklch(0.9596 0.02 28.9029);
+  --secondary-foreground: oklch(0.5721 0.1749 33.2608);
 
-  --muted: oklch(0.985 0.002 247.839);
-  --muted-foreground: oklch(0.446 0.03 256.802);
+  --muted: oklch(0.9656 0.0176 39.4009);
+  --muted-foreground: oklch(0.5547 0.0155 60.3783);
 
-  --accent: oklch(0.985 0.002 247.839);
-  --accent-foreground: oklch(0.278 0.033 256.848);
+  --accent: oklch(0.8287 0.1147 58.0523);
+  --accent-foreground: oklch(0.3325 0.0194 2.7074);
 
-  --border: oklch(0.928 0.006 264.531);
-  --ring: oklch(0.901 0.076 70.697);
+  --border: oklch(0.9296 0.037 38.6868);
+  --ring: oklch(0.7357 0.1641 34.7091);
 
   --radius: 1.25rem;
   --radius-sm: calc(var(--radius) - 0.25rem);
