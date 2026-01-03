@@ -1,3 +1,4 @@
+import { headingVariants } from "~/components/vorent/heading";
 import { cn } from "~/lib/utils";
 
 export function Card({ className, ...props }: React.ComponentProps<"div">) {
@@ -10,9 +11,9 @@ export function Card({ className, ...props }: React.ComponentProps<"div">) {
   );
 }
 
-export function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
+export function CardHeader({ className, ...props }: React.ComponentProps<"header">) {
   return (
-    <div
+    <header
       data-slot="card-header"
       className={cn(
         "grid auto-rows-min gap-4 p-6",
@@ -42,7 +43,7 @@ export function CardTitle({ className, ...props }: React.ComponentProps<"h5">) {
   return (
     <h5
       data-slot="card-title"
-      className={cn("text-lg font-semibold tracking-tight", "sm:text-xl", className)}
+      className={cn(headingVariants({ size: "md" }), className)}
       {...props}
     />
   );
@@ -75,9 +76,9 @@ export function CardContent({ className, ...props }: React.ComponentProps<"div">
   return <div data-slot="card-content" className={cn("px-6", className)} {...props} />;
 }
 
-export function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
+export function CardFooter({ className, ...props }: React.ComponentProps<"footer">) {
   return (
-    <div
+    <footer
       data-slot="card-footer"
       className={cn("flex items-center gap-2 p-6", className)}
       {...props}
