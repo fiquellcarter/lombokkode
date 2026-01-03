@@ -1,4 +1,4 @@
-import { Bell, Heart, MoreHorizontal, Sparkles } from "lucide-react";
+import { Bell, Heart, MoreHorizontal, Quote, Sparkles } from "lucide-react";
 
 import {
   Accordion,
@@ -34,11 +34,86 @@ import {
 import { Heading } from "~/components/vorent/heading";
 import { ScrollArea } from "~/components/vorent/scroll-area";
 import { Separator } from "~/components/vorent/separator";
+import {
+  Testimoni,
+  TestimoniContent,
+  TestimoniHeader,
+  TestimoniIcon,
+  TestimoniMedia,
+  TestimoniMeta,
+  TestimoniTitle,
+} from "~/components/vorent/testimoni";
 import { Small, Text, TextLink } from "~/components/vorent/text";
 
 export default function UI() {
   return (
     <main className="container flex flex-col gap-16 py-16">
+      <div className="flex flex-col items-center gap-4">
+        <Testimoni className="w-full max-w-xl">
+          <TestimoniIcon>
+            <Quote className="size-10" />
+          </TestimoniIcon>
+          <TestimoniHeader>
+            <TestimoniMedia>
+              <Avatar>
+                <AvatarImage src="https://github.com/izmahaerill.png" alt="@izmahaerill" />
+                <AvatarFallback>IZ</AvatarFallback>
+              </Avatar>
+            </TestimoniMedia>
+            <TestimoniTitle>Azmi</TestimoniTitle>
+            <TestimoniMeta>Founder @ Sell Friends</TestimoniMeta>
+          </TestimoniHeader>
+        </Testimoni>
+        <Testimoni className="w-full max-w-xl">
+          <TestimoniIcon>
+            <Quote className="size-10" />
+          </TestimoniIcon>
+          <TestimoniHeader>
+            <TestimoniTitle>Arifin</TestimoniTitle>
+            <TestimoniMeta>CTO @ Lombok Kode</TestimoniMeta>
+          </TestimoniHeader>
+        </Testimoni>
+        <Testimoni className="w-full max-w-xl">
+          <TestimoniIcon>
+            <Quote className="size-10" />
+          </TestimoniIcon>
+          <TestimoniHeader>
+            <TestimoniTitle>Haekal</TestimoniTitle>
+            <TestimoniMeta>CEO @ KallCreative</TestimoniMeta>
+          </TestimoniHeader>
+          <TestimoniContent>
+            <Text className="italic">
+              Critics of biocentrism contend that it may be impractical to grant equal moral status
+              to all living things, especially when the interests of different organisms conflict.
+              However, proponents argue that shifting toward a biocentric mindset is necessary for
+              sustainability and the long-term health of the planet.
+            </Text>
+          </TestimoniContent>
+        </Testimoni>
+        <Testimoni className="w-full max-w-xl">
+          <TestimoniIcon>
+            <Quote className="size-10" />
+          </TestimoniIcon>
+          <TestimoniHeader>
+            <TestimoniMedia>
+              <Avatar>
+                <AvatarImage src="https://github.com/fiquellcarter.png" alt="@fiquellcarter" />
+                <AvatarFallback>FI</AvatarFallback>
+              </Avatar>
+            </TestimoniMedia>
+            <TestimoniTitle>Fiquell Carter</TestimoniTitle>
+            <TestimoniMeta>Founder & CEO @ Ovela Studio</TestimoniMeta>
+          </TestimoniHeader>
+          <TestimoniContent>
+            <Text className="italic">
+              Critics of biocentrism contend that it may be impractical to grant equal moral status
+              to all living things, especially when the interests of different organisms conflict.
+              However, proponents argue that shifting toward a biocentric mindset is necessary for
+              sustainability and the long-term health of the planet.
+            </Text>
+          </TestimoniContent>
+        </Testimoni>
+      </div>
       <div className="flex justify-center gap-4">
         <Dialog>
           <DialogTrigger>Nested</DialogTrigger>
