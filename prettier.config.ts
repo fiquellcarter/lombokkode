@@ -8,7 +8,7 @@ const config: Config = {
   importOrder: ["<BUILTIN_MODULES>", "", "<THIRD_PARTY_MODULES>", "", "^~/(.*)$", "", "^[.]"],
   importOrderTypeScriptVersion: "5.0.0",
   tailwindStylesheet: "./app/app.css",
-  tailwindFunctions: ["clsx", "cva"],
+  tailwindFunctions: ["clsx", "cva", "cn"],
 };
 
 export default config;
