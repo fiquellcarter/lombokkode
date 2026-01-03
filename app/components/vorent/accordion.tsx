@@ -33,7 +33,7 @@ export function AccordionHeader({
   className,
   ...props
 }: React.ComponentProps<typeof BaseAccordion.Header>) {
-  return <BaseAccordion.Header data-slot="accordion-header" className={cn(className)} {...props} />;
+  return <BaseAccordion.Header data-slot="accordion-header" className={className} {...props} />;
 }
 
 export function AccordionTrigger({
@@ -45,7 +45,7 @@ export function AccordionTrigger({
     <BaseAccordion.Trigger
       data-slot="accordion-trigger"
       className={cn(
-        "group flex w-full items-center justify-between gap-4 rounded-md p-6 text-left font-medium text-foreground transition-colors duration-200 ease-in-out",
+        "group flex w-full items-center justify-between gap-4 rounded-md p-6 font-medium text-foreground transition-colors duration-200 ease-in-out",
         "focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
         "disabled:pointer-events-none disabled:opacity-50",
         "data-panel-open:text-primary",
@@ -55,7 +55,7 @@ export function AccordionTrigger({
       {children}
       <ChevronDown
         className={cn(
-          "pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200 ease-in-out",
+          "pointer-events-none translate-y-0.5 transition-transform duration-200 ease-in-out",
           "group-data-panel-open:rotate-180"
         )}
       />
@@ -78,7 +78,7 @@ export function AccordionPanel({
         className
       )}
       {...props}>
-      <div data-slot="accordion-panel-content" className="px-6 pt-1 pb-6">
+      <div data-slot="accordion-panel-content" className="px-6 pb-6">
         {children}
       </div>
     </BaseAccordion.Panel>

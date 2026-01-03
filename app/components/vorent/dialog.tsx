@@ -34,7 +34,7 @@ export function DialogPopup({
       <BaseDialog.Backdrop
         data-slot="dialog-backdrop"
         className={cn(
-          "fixed inset-0 min-h-dvh bg-black/20 backdrop-blur-sm transition-opacity duration-200 ease-in-out",
+          "fixed inset-0 min-h-dvh bg-black/20 transition-opacity duration-200 ease-in-out",
           "data-starting-style:opacity-0",
           "data-ending-style:opacity-0"
         )}
@@ -42,10 +42,10 @@ export function DialogPopup({
       <BaseDialog.Popup
         data-slot="dialog-popup"
         className={cn(
-          "fixed top-[calc(50%+1.25rem*var(--nested-dialogs))] left-1/2 w-full max-w-lg -translate-x-1/2 -translate-y-1/2 scale-[calc(1-0.1*var(--nested-dialogs))] rounded-md border bg-background p-6 transition-all duration-200 ease-in-out",
+          "fixed top-[calc(50%+1.25rem*var(--nested-dialogs))] left-1/2 w-full max-w-lg -translate-x-1/2 -translate-y-1/2 scale-[calc(1-0.1*var(--nested-dialogs))] rounded-md border bg-background transition-all duration-200 ease-in-out",
           "data-starting-style:scale-90 data-starting-style:opacity-0",
           "data-ending-style:scale-90 data-ending-style:opacity-0",
-          "data-nested-dialog-open:after:absolute data-nested-dialog-open:after:inset-0 data-nested-dialog-open:after:rounded-[inherit]",
+          "data-nested-dialog-open:after:absolute data-nested-dialog-open:after:inset-0 data-nested-dialog-open:after:rounded-[inherit] data-nested-dialog-open:after:content-['']",
           className
         )}
         {...props}>
@@ -89,7 +89,7 @@ export function DialogDescription({
   return (
     <BaseDialog.Description
       data-slot="dialog-description"
-      className={cn("leading-relaxed text-muted-foreground", className)}
+      className={cn("text-sm leading-relaxed text-muted-foreground", className)}
       {...props}
     />
   );
@@ -124,14 +124,14 @@ export function DialogClose({
 }
 
 export function DialogContent({ className, ...props }: React.ComponentProps<"div">) {
-  return <div data-slot="dialog-content" className={cn("px-6", className)} {...props} />;
+  return <div data-slot="dialog-content" className={cn("px-6 pb-6", className)} {...props} />;
 }
 
 export function DialogFooter({ className, ...props }: React.ComponentProps<"footer">) {
   return (
     <footer
       data-slot="dialog-footer"
-      className={cn("flex items-center gap-2 p-6", className)}
+      className={cn("flex items-center gap-2 px-6 pb-6", className)}
       {...props}
     />
   );
