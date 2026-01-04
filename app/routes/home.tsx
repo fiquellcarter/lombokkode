@@ -1,8 +1,10 @@
+import Hero from "~/components/hero";
+
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <main>
-        <p>Welcome to the new React Router App!</p>
+        <Hero />
       </main>
     </div>
   );
