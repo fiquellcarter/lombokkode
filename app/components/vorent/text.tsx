@@ -38,7 +38,7 @@ export function Small({ render, className, ...props }: useRender.ComponentProps<
     render,
     props: {
       "data-slot": "small",
-      className: cn("text-sm leading-tight font-semibold text-primary", className),
+      className: cn("text-xs leading-tight font-semibold text-primary", className),
       ...props,
     },
   });
