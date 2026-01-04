@@ -11,9 +11,11 @@ export default function OurServices() {
       id="services"
       className="flex min-h-dvh items-center justify-center bg-card py-32 text-card-foreground">
       <div className="container">
-        <div className="mx-auto mb-32 grid max-w-6xl grid-cols-1 gap-8 text-center lg:grid-cols-2 lg:text-left">
-          <div className="flex flex-col gap-2">
-            <Small className="uppercase">Tentang Kami</Small>
+        <div className="mx-auto mb-32 grid max-w-6xl grid-cols-1 items-center gap-8 text-center lg:grid-cols-2 lg:text-left">
+          <div className="flex flex-col gap-4">
+            <Text className="uppercase">
+              <Small>Tentang Kami</Small>
+            </Text>
             <Heading level={2}>Partner Digital Anda di Lombok</Heading>
           </div>
           <div className="flex flex-col gap-4">
@@ -28,7 +30,7 @@ export default function OurServices() {
             </Text>
           </div>
         </div>
-        <div className="mb-16 flex flex-col gap-4 text-center">
+        <div className="mb-16 flex flex-col gap-8 text-center">
           <Heading level={3}>Keunggulan Kami</Heading>
           <Text>Mengapa ratusan klien mempercayakan website mereka kepada kami?</Text>
         </div>
@@ -40,7 +42,7 @@ export default function OurServices() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.8 }}
               viewport={{ once: true }}>
-              <Card className="bg-background text-foreground transition-colors duration-200 ease-in-out hover:bg-card hover:text-card-foreground">
+              <Card className="size-full bg-background text-foreground transition-colors duration-200 ease-in-out hover:bg-card hover:text-card-foreground">
                 <CardHeader>
                   <CardIcon>
                     <service.icon />
