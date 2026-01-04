@@ -10,23 +10,23 @@ export default function Hero() {
   return (
     <section className="flex min-h-dvh items-center justify-center overflow-hidden py-32">
       <div className="container">
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+        <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <motion.div
-            animate={{ opacity: 1, x: 0 }}
-            className="text-center lg:text-left"
             initial={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.8 }}>
-            <div className="mb-2 inline-block rounded-sm border border-border bg-primary/5 px-2 py-1">
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center lg:text-left">
+            <div className="mb-2 inline-block rounded-sm border bg-primary/5 px-2 py-1">
               <Small className="uppercase">Mitra Digital Terpercaya Lombok</Small>
             </div>
-            <Heading className="mb-4 leading-tight font-bold">
+            <Heading className="mb-8 leading-tight font-bold">
               <span>Bangun Website Premium yang</span>
               <br />
               <span className="bg-linear-to-r from-primary to-[#e65a3f] bg-clip-text text-transparent">
                 Menguatkan Identitas Bisnis Anda
               </span>
             </Heading>
-            <Text className="mb-6">
+            <Text className="mb-16">
               Dari bisnis hingga personal branding — kami membantu Anda tampil percaya diri di dunia
               digital dengan website yang elegan, cepat, dan mudah dikelola.
             </Text>
@@ -42,10 +42,10 @@ export default function Hero() {
             </div>
           </motion.div>
           <motion.div
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            className="relative"
             initial={{ opacity: 0, scale: 0.8, y: 50 }}
-            transition={{ delay: 0.2, duration: 0.8 }}>
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.8 }}
+            className="relative">
             <div className="group relative aspect-square overflow-hidden rounded-md">
               <div className="absolute inset-0 z-10 bg-linear-to-t from-primary/20 to-transparent"></div>
               <img
@@ -54,13 +54,13 @@ export default function Hero() {
                 className="size-full object-cover transition-transform duration-400 ease-in-out group-hover:scale-105"
               />
               <motion.div
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                className="absolute inset-x-8 bottom-8 z-20 rounded-md border border-border bg-card/80 p-6 text-card-foreground backdrop-blur-md"
                 initial={{ opacity: 0, scale: 0.8, y: 25 }}
-                transition={{ delay: 0.4, duration: 0.8 }}>
-                <div className="mb-2 flex items-end justify-between">
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.8 }}
+                className="absolute inset-x-8 bottom-8 z-20 rounded-md border bg-card/80 p-6 text-card-foreground backdrop-blur-md">
+                <div className="mb-2 flex items-end justify-between gap-2">
                   <div>
-                    <Small className="mb-1">Studi Kasus Terbaru</Small>
+                    <Small>Studi Kasus Terbaru</Small>
                     <Heading level={4}>Gili Adventures</Heading>
                   </div>
                   <Heading level={2} className="text-primary">
