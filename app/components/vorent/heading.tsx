@@ -4,7 +4,7 @@ import * as React from "react";
 
 import { cn } from "~/lib/utils";
 
-export const headingVariants = cva("font-semibold tracking-tight", {
+export const headingVariants = cva("font-semibold tracking-tight text-pretty", {
   variants: {
     size: {
       sm: ["text-base", "sm:text-lg"],

@@ -9,7 +9,7 @@ export function Text({ render, className, ...props }: useRender.ComponentProps<"
     render,
     props: {
       "data-slot": "text",
-      className: cn("leading-relaxed", className),
+      className: cn("leading-relaxed text-pretty", className),
       ...props,
     },
   });
