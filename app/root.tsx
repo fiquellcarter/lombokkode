@@ -14,18 +14,13 @@ import "~/app.css";
 
 import { Heading } from "~/components/vorent/heading";
 import { Text } from "~/components/vorent/text";
+import { site } from "~/config/site";
 
 export function meta(): Route.MetaDescriptors {
   return [
-    {
-      title:
-        "Jasa Pembuatan Website Profesional Lombok Kode | Mitra Digital Terpercaya untuk Bisnis & UMKM",
-    },
-    {
-      name: "description",
-      content:
-        "Tingkatkan reputasi bisnis Anda dengan website premium, modern, cepat, dan siap bersaing di mesin pencari. Solusi pembuatan website terbaik di Lombok untuk pasar lokal dan global. Konsultasi Gratis.",
-    },
+    { title: site.meta.title },
+    { name: "description", content: site.meta.description },
+    { name: "keywords", content: site.meta.keywords.join(", ") },
   ];
 }
 
