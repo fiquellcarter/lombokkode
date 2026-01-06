@@ -51,17 +51,20 @@ export default function OurPortfolio() {
           {visiblePortfolios.map((portfolio, index) => (
             <Dialog key={index}>
               <DialogTrigger
-                render={<motion.div />}
+                render={
+                  <motion.div
+                    initial={{ opacity: 0, y: 25 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1, duration: 0.8 }}
+                    viewport={{ once: true }}
+                  />
+                }
                 className={cn(
                   "group relative cursor-pointer overflow-hidden rounded-md",
                   "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none"
                 )}
                 onClick={() => setSelectedPortfolio(portfolio)}>
-                <motion.div
-                  initial={{ opacity: 0, y: 25 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1, duration: 0.8 }}
-                  viewport={{ once: true }}>
+                <motion.div>
                   <div className="aspect-6/4">
                     <img
                       src={portfolio.image}
