@@ -59,6 +59,7 @@ export default function OurPortfolio() {
                     viewport={{ once: true }}
                   />
                 }
+                nativeButton={false}
                 className={cn(
                   "group relative cursor-pointer overflow-hidden rounded-md",
                   "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none"
