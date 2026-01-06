@@ -8,7 +8,7 @@ import { services } from "~/data/services";
 export default function OurServices() {
   return (
     <section
-      id="services"
+      id="our-services"
       className="flex min-h-dvh items-center justify-center bg-card py-32 text-card-foreground">
       <div className="container">
         <div className="mx-auto mb-32 grid max-w-6xl grid-cols-1 items-center gap-8 text-center lg:grid-cols-2 lg:text-left">
