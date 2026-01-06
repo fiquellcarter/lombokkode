@@ -28,7 +28,7 @@ export function TestimoniHeader({ className, ...props }: React.ComponentProps<"d
     <div
       data-slot="testimoni-header"
       className={cn(
-        "grid auto-rows-min gap-y-1 p-6",
+        "grid auto-rows-min p-6",
         "has-data-[slot='testimoni-media']:grid-cols-[auto_1fr]",
         "has-data-[slot='testimoni-media']:gap-x-4",
         className
