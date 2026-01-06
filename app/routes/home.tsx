@@ -1,4 +1,5 @@
 import Hero from "~/components/hero";
+import OurPricing from "~/components/our-pricing";
 import OurServices from "~/components/our-services";
 import OurTrust from "~/components/our-trust";
 
@@ -9,6 +10,7 @@ export default function Home() {
         <Hero />
         <OurServices />
         <OurTrust />
+        <OurPricing />
       </main>
     </div>
   );
