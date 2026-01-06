@@ -1,4 +1,5 @@
 import Hero from "~/components/hero";
+import OurFAQ from "~/components/our-faq";
 import OurPortfolio from "~/components/our-portfolio";
 import OurPricing from "~/components/our-pricing";
 import OurServices from "~/components/our-services";
@@ -15,6 +16,7 @@ export default function Home() {
         <OurPricing />
         <OurPortfolio />
         <OurTestimonial />
+        <OurFAQ />
       </main>
     </div>
   );
