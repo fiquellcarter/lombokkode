@@ -23,12 +23,14 @@ export default function OurPortfolio() {
   return (
     <section id="our-portfolio" className="flex min-h-dvh items-center justify-center py-32">
       <div className="container">
-        <div className="mb-8 md:flex md:items-end md:justify-between md:gap-4">
-          <div className="flex flex-col gap-4">
-            <Text className="uppercase">
+        <div className="mb-16 md:flex md:items-end md:justify-between md:gap-4">
+          <div>
+            <Text className="mb-2 uppercase">
               <Small>Portofolio</Small>
             </Text>
-            <Heading level={3}>Karya Terpilih Kami</Heading>
+            <Heading level={3} className="mb-4">
+              Karya Terpilih Kami
+            </Heading>
             <Text>Studi kasus nyata bagaimana kami membantu klien berkembang.</Text>
           </div>
           <div className="hidden md:block">

@@ -19,7 +19,7 @@ export default function OurTestimonial() {
   return (
     <section className="flex min-h-dvh items-center justify-center bg-card py-32 text-card-foreground">
       <div className="container">
-        <div className="mb-16 flex flex-col gap-4 text-center">
+        <div className="mb-16 flex flex-col gap-2 text-center">
           <Text>
             <Small className="uppercase">Testimoni</Small>
           </Text>

@@ -16,12 +16,12 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className="text-center lg:text-left">
-            <Text className="mb-4">
+            <Text className="mb-2">
               <Small className="rounded-sm border bg-primary/5 px-3 py-1.5 uppercase">
                 Mitra Digital Terpercaya Lombok
               </Small>
             </Text>
-            <Heading className="mb-8 leading-tight font-bold">
+            <Heading className="mb-4 leading-tight font-bold">
               <span>Bangun Website Premium yang</span>
               <br />
               <span className="bg-linear-to-r from-primary to-[#e65a3f] bg-clip-text text-transparent">
@@ -61,7 +61,7 @@ export default function Hero() {
                 transition={{ delay: 0.4, duration: 0.8 }}
                 className="absolute inset-x-8 bottom-8 z-20 rounded-md border bg-card/80 p-6 text-card-foreground backdrop-blur-md">
                 <div className="mb-2 flex items-end justify-between gap-2">
-                  <div className="flex flex-col gap-4">
+                  <div className="flex flex-col gap-2">
                     <Text>
                       <Small>Studi Kasus Terbaru</Small>
                     </Text>
@@ -71,7 +71,7 @@ export default function Hero() {
                     +300%
                   </Heading>
                 </div>
-                <div className="flex items-center justify-between gap-2 text-sm">
+                <div className="flex items-center justify-between gap-2 px-1 text-sm">
                   <Text>Leads Booking</Text>
                   <Text>Kenaikan Trafik</Text>
                 </div>

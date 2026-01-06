@@ -67,7 +67,7 @@ export default function OurTrust() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}>
-            <Text className="mb-4 uppercase">
+            <Text className="mb-2 uppercase">
               <Small>Kenapa Memilih Kami?</Small>
             </Text>
             <Heading level={2} className="mb-8">

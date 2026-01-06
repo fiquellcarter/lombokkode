@@ -35,11 +35,11 @@ export default function OurPricing() {
       id="our-pricing"
       className="flex min-h-dvh items-center justify-center bg-card py-32 text-card-foreground">
       <div className="container">
-        <div className="mx-auto mb-16 max-w-3xl text-center">
-          <Text className="mb-4 uppercase">
+        <div className="mx-auto mb-8 max-w-3xl text-center">
+          <Text className="mb-2 uppercase">
             <Small>Layanan & Harga</Small>
           </Text>
-          <Heading level={2} className="mb-8">
+          <Heading level={3} className="mb-4">
             Paket Website Premium
           </Heading>
           <Text>
@@ -59,7 +59,7 @@ export default function OurPricing() {
             ))}
           </div>
         </ScrollArea>
-        <div className="mb-16 flex flex-col gap-4 text-center">
+        <div className="mb-16 flex flex-col gap-2 text-center">
           <Heading level={4}>{currentPricing.title}</Heading>
           <Text>{currentPricing.description}</Text>
         </div>

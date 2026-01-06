@@ -12,7 +12,7 @@ export default function OurServices() {
       className="flex min-h-dvh items-center justify-center bg-card py-32 text-card-foreground">
       <div className="container">
         <div className="mx-auto mb-32 grid max-w-6xl grid-cols-1 items-center gap-8 text-center lg:grid-cols-2 lg:text-left">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2">
             <Text className="uppercase">
               <Small>Tentang Kami</Small>
             </Text>
@@ -30,7 +30,7 @@ export default function OurServices() {
             </Text>
           </div>
         </div>
-        <div className="mb-16 flex flex-col gap-8 text-center">
+        <div className="mb-16 flex flex-col gap-4 text-center">
           <Heading level={3}>Keunggulan Kami</Heading>
           <Text>Mengapa ratusan klien mempercayakan website mereka kepada kami?</Text>
         </div>
