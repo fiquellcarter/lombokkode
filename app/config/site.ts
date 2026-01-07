@@ -1,5 +1,6 @@
 export const site = {
   name: "Lombok Kode",
+  url: "https://lombokkode.my.id",
   meta: {
     title:
       "Jasa Pembuatan Website Profesional Lombok Kode | Mitra Digital Terpercaya untuk Bisnis & UMKM",
