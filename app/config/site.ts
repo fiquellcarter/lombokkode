@@ -34,6 +34,8 @@ export const site = {
       "lombok kode",
     ],
   },
-  email: "lombokkode@gmail.com",
-  phone: "6281234567890",
+  contact: {
+    email: "lombokkode@gmail.com",
+    phone: "6281234567890",
+  },
 };

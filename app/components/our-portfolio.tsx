@@ -120,7 +120,7 @@ export default function OurPortfolio() {
                           <Button
                             render={
                               <Link
-                                to={`https://wa.me/${site.phone}?text=${encodeURIComponent(`Halo kak, saya tertarik dengan proyek ${selectedPortfolio.title}. Mohon info detailnya ya. Terima kasih.`)}`}
+                                to={`https://wa.me/${site.contact.phone}?text=${encodeURIComponent(`Halo kak, saya tertarik dengan proyek ${selectedPortfolio.title}. Mohon info detailnya ya. Terima kasih.`)}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                               />

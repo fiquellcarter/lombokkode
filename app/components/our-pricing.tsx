@@ -25,7 +25,7 @@ export default function OurPricing() {
 
   const handleSelectPlan = (name: string) => {
     const message = `Halo kak, saya tertarik dengan layanan ${currentPricing.title} (${name}). Mohon info detailnya ya. Terima kasih.`;
-    const url = `https://wa.me/${site.phone}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${site.contact.phone}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
   };
