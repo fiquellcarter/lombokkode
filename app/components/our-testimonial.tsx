@@ -33,7 +33,7 @@ export default function OurTestimonial() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.8 }}
               viewport={{ once: true }}>
-              <Testimoni className="size-full bg-background text-foreground">
+              <Testimoni className="size-full bg-background text-foreground transition-colors duration-200 ease-in-out hover:bg-card hover:text-card-foreground">
                 <TestimoniIcon>
                   <Quote className="size-10" />
                 </TestimoniIcon>
