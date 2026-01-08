@@ -23,9 +23,7 @@ const features = [
 
 export default function OurTrust() {
   return (
-    <section
-      id="our-trust"
-      className="flex min-h-dvh items-center justify-center overflow-hidden py-32">
+    <section className="flex min-h-dvh items-center justify-center overflow-hidden py-32">
       <div className="container">
         <div className="mb-32 grid grid-cols-2 gap-8 lg:grid-cols-4">
           {stats.map((stat, index) => (

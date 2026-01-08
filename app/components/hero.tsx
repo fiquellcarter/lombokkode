@@ -33,11 +33,11 @@ export default function Hero() {
               digital dengan website yang elegan, cepat, dan mudah dikelola.
             </Text>
             <div className="flex flex-col items-center justify-center gap-4 md:flex-row lg:justify-start">
-              <Button render={<Link to="#contact" />} size="lg">
+              <Button render={<Link to="#our-cta" />} size="lg">
                 Konsultasi Gratis Sekarang
                 <MessageCircleMore />
               </Button>
-              <Button render={<Link to="#portfolio" />} variant="secondary" size="lg">
+              <Button render={<Link to="#our-portfolio" />} variant="secondary" size="lg">
                 Lihat Portofolio Kami
                 <ArrowRight />
               </Button>

@@ -1,4 +1,6 @@
+import Footer from "~/components/footer";
 import Hero from "~/components/hero";
+import OurCTA from "~/components/our-cta";
 import OurFAQ from "~/components/our-faq";
 import OurPortfolio from "~/components/our-portfolio";
 import OurPricing from "~/components/our-pricing";
@@ -17,6 +19,8 @@ export default function Home() {
         <OurPortfolio />
         <OurTestimonial />
         <OurFAQ />
+        <OurCTA />
+        <Footer />
       </main>
     </div>
   );

@@ -36,6 +36,6 @@ export const site = {
   },
   contact: {
     email: "lombokkode@gmail.com",
-    phone: "6281234567890",
+    phone: "6287765936377",
   },
 };
