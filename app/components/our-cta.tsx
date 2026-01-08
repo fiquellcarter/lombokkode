@@ -7,16 +7,14 @@ import { site } from "~/config/site";
 
 export default function OurCTA() {
   return (
-    <section id="cta" className="relative bg-secondary py-32 text-secondary-foreground">
-      <div className="container text-center">
+    <section id="cta" className="relative bg-secondary py-32">
+      <div className="container max-w-3xl text-center">
         <div className="mb-16 flex flex-col gap-8">
-          <Heading>Siap Transformasi Digital?</Heading>
-          <div className="mx-auto max-w-2xl">
-            <Text>
-              Diskusikan proyek Anda sekarang. Kami siap membantu Anda mencapai target bisnis dengan
-              solusi digital yang tepat.
-            </Text>
-          </div>
+          <Heading className="text-primary">Siap Transformasi Digital?</Heading>
+          <Text className="text-muted-foreground">
+            Diskusikan proyek Anda sekarang. Kami siap membantu Anda mencapai target bisnis dengan
+            solusi digital yang tepat.
+          </Text>
         </div>
         <Button
           render={
