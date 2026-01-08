@@ -21,7 +21,7 @@ export default function OurPortfolio() {
   const visiblePortfolios = showAll ? portfolios : portfolios.slice(0, 6);
 
   return (
-    <section id="our-portfolio" className="flex min-h-dvh items-center justify-center py-32">
+    <section id="portfolio" className="flex min-h-dvh items-center justify-center py-32">
       <div className="container">
         <div className="mb-16 md:flex md:items-end md:justify-between md:gap-4">
           <div>

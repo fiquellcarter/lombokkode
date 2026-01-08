@@ -1,5 +1,5 @@
 export const navigations = [
-  { title: "Tentang", link: "#our-services" },
-  { title: "Harga", link: "#our-pricing" },
-  { title: "Portofolio", link: "#our-portfolio" },
+  { title: "Tentang", link: "#about" },
+  { title: "Harga", link: "#pricing" },
+  { title: "Portofolio", link: "#portfolio" },
 ];

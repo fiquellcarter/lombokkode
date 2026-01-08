@@ -32,7 +32,7 @@ export default function OurPricing() {
 
   return (
     <section
-      id="our-pricing"
+      id="pricing"
       className="flex min-h-dvh items-center justify-center bg-card py-32 text-card-foreground">
       <div className="container">
         <div className="mx-auto mb-8 max-w-3xl text-center">
