@@ -77,7 +77,7 @@
   }
 
   body {
-    @apply relative bg-background text-foreground selection:bg-primary selection:text-primary-foreground;
+    @apply bg-background text-foreground selection:bg-primary selection:text-primary-foreground;
   }
 
   button:not(:disabled),

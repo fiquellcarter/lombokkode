@@ -1,4 +1,5 @@
 import Footer from "~/components/footer";
+import Header from "~/components/header";
 import Hero from "~/components/hero";
 import OurAbout from "~/components/our-about";
 import OurCTA from "~/components/our-cta";
@@ -10,7 +11,8 @@ import OurTrust from "~/components/our-trust";
 
 export default function Home() {
   return (
-    <div>
+    <div className="relative">
+      <Header />
       <main>
         <Hero />
         <OurAbout />
@@ -20,8 +22,8 @@ export default function Home() {
         <OurTestimonial />
         <OurFAQ />
         <OurCTA />
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 }
