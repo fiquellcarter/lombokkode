@@ -113,7 +113,7 @@ export default function OurPortfolio() {
                                 rel="noopener noreferrer"
                               />
                             }
-                            variant="outline">
+                            variant="secondary">
                             Lihat Proyek
                             <ExternalLink />
                           </Button>
@@ -124,8 +124,7 @@ export default function OurPortfolio() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                               />
-                            }
-                            className="bg-[#25D366] text-white hover:bg-[#25D366]/90 active:bg-[#25D366]/85">
+                            }>
                             Hubungi via WhatsApp
                             <Icon.whatsapp className="fill-current" />
                           </Button>
