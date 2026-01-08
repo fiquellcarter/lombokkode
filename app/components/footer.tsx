@@ -17,8 +17,8 @@ export default function Footer() {
   return (
     <footer className="relative pt-32">
       <div className="container">
-        <div className="mb-16 grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-4">
-          <div className="flex flex-col gap-6">
+        <div className="mb-16 grid grid-cols-1 gap-16 md:grid-cols-3 lg:grid-cols-5">
+          <div className="flex flex-col gap-6 md:col-span-3 lg:col-span-2">
             <div className="flex items-center gap-2 select-none">
               <img src="/logo.png" alt="Logo" className="size-8" />
               <Heading level={5}>
@@ -31,21 +31,21 @@ export default function Footer() {
             </Text>
           </div>
           <div className="flex flex-col gap-6">
-            <Heading level={6}>Menu Utama</Heading>
-            <ul className="flex flex-col gap-4 text-muted-foreground">
-              {navigations.map((navigation, index) => (
-                <li key={index}>
-                  <TextLink render={<Link to={navigation.link} />}>{navigation.title}</TextLink>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="flex flex-col gap-6">
             <Heading level={6}>Layanan & Harga</Heading>
             <ul className="flex flex-col gap-4 text-muted-foreground">
               {prices.map((price, index) => (
                 <li key={index}>
                   <TextLink render={<Link to={price.href} />}>{price.title}</TextLink>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="flex flex-col gap-6">
+            <Heading level={6}>Menu Utama</Heading>
+            <ul className="flex flex-col gap-4 text-muted-foreground">
+              {navigations.map((navigation, index) => (
+                <li key={index}>
+                  <TextLink render={<Link to={navigation.link} />}>{navigation.title}</TextLink>
                 </li>
               ))}
             </ul>
