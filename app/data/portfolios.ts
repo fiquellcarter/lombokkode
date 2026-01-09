@@ -1,12 +1,12 @@
-import ArunikaBatikRental from "~/assets/images/arunika-batik-rental.png?format=webp";
-import EclatFragranceHouse from "~/assets/images/eclat-fragrance-house.png?format=webp";
-import KencanaHeritageArchives from "~/assets/images/kencana-heritage-archives.png?format=webp";
-import LombokPhotoshoot from "~/assets/images/lombok-photoshoot.png?format=webp";
-import LombokPureTravel from "~/assets/images/lombok-pure-travel.png?format=webp";
-import LuxeBeauty from "~/assets/images/luxe-beauty.png?format=webp";
-import MuhHaerilAzmi from "~/assets/images/muh-haeril-azmi.png?format=webp";
-import NusantaraRentCar from "~/assets/images/nusantara-rent-car.png?format=webp";
-import WisataAceh from "~/assets/images/wisata-aceh.png?format=webp";
+import ArunikaBatikRental from "~/assets/images/portfolio/arunika-batik-rental.png?format=webp";
+import EclatFragranceHouse from "~/assets/images/portfolio/eclat-fragrance-house.png?format=webp";
+import KencanaHeritageArchives from "~/assets/images/portfolio/kencana-heritage-archives.png?format=webp";
+import LombokPhotoshoot from "~/assets/images/portfolio/lombok-photoshoot.png?format=webp";
+import LombokPureTravel from "~/assets/images/portfolio/lombok-pure-travel.png?format=webp";
+import LuxeBeauty from "~/assets/images/portfolio/luxe-beauty.png?format=webp";
+import MuhHaerilAzmi from "~/assets/images/portfolio/muh-haeril-azmi.png?format=webp";
+import NusantaraRentCar from "~/assets/images/portfolio/nusantara-rent-car.png?format=webp";
+import WisataAceh from "~/assets/images/portfolio/wisata-aceh.png?format=webp";
 
 export const portfolios = [
   {

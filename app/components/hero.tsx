@@ -2,9 +2,11 @@ import { motion } from "framer-motion";
 import { ArrowRight, MessageCircleMore } from "lucide-react";
 import { Link } from "react-router";
 
+import ModernWorkspace from "~/assets/images/hero/modern-workspace.png?format=webp";
 import { Button } from "~/components/vorent/button";
-import { Heading } from "~/components/vorent/heading";
+import { Heading, headingVariants } from "~/components/vorent/heading";
 import { Small, Text } from "~/components/vorent/text";
+import { cn } from "~/lib/utils";
 
 export default function Hero() {
   return (
@@ -51,7 +53,7 @@ export default function Hero() {
             <div className="group relative aspect-square overflow-hidden rounded-md">
               <div className="absolute inset-0 z-10 bg-linear-to-t from-primary/20 to-transparent"></div>
               <img
-                src="https://images.unsplash.com/photo-1497215728101-856f4ea42174"
+                src={ModernWorkspace}
                 alt="Modern Workspace"
                 className="size-full object-cover transition-transform duration-400 ease-in-out group-hover:scale-105"
               />
@@ -65,13 +67,13 @@ export default function Hero() {
                     <Text>
                       <Small>Studi Kasus Terbaru</Small>
                     </Text>
-                    <Heading level={4}>Gili Adventures</Heading>
+                    <Text className={cn(headingVariants({ size: "lg" }))}>Gili Adventures</Text>
                   </div>
-                  <Heading level={2} className="text-primary">
+                  <Text className={cn("text-primary", headingVariants({ size: "xxl" }))}>
                     +300%
-                  </Heading>
+                  </Text>
                 </div>
-                <div className="flex items-center justify-between gap-2 px-1 text-sm">
+                <div className="flex items-center justify-between gap-2 text-sm">
                   <Text>Leads Booking</Text>
                   <Text>Kenaikan Trafik</Text>
                 </div>

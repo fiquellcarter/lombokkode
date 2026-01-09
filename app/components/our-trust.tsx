@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, Clock, ShieldCheck, Star, Users } from "lucide-react";
 
+import TeamCollaboration from "~/assets/images/trust/team-collaboration.png?format=webp";
 import { Card, CardDescription, CardHeader, CardIcon, CardTitle } from "~/components/vorent/card";
 import { Heading } from "~/components/vorent/heading";
 import { Small, Text } from "~/components/vorent/text";
@@ -54,8 +55,8 @@ export default function OurTrust() {
             <div className="relative aspect-video overflow-hidden rounded-md">
               <div className="absolute inset-0 z-10 bg-primary/10 mix-blend-multiply"></div>
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978"
-                alt="Team Meeting Lombok Kode"
+                src={TeamCollaboration}
+                alt="Team Collaboration"
                 className="size-full object-cover"
               />
             </div>

@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-import Logo from "~/assets/logo.png?format=webp";
+import Logo from "~/assets/images/brand/logo.png?format=webp";
 import { Icon } from "~/components/shared/icon";
 import { Button } from "~/components/vorent/button";
 import { Heading } from "~/components/vorent/heading";

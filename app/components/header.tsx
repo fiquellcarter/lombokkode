@@ -2,7 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
 
-import Logo from "~/assets/logo.png?format=webp";
+import Logo from "~/assets/images/brand/logo.png?format=webp";
 import { Button } from "~/components/vorent/button";
 import { Heading } from "~/components/vorent/heading";
 import { TextLink } from "~/components/vorent/text";
@@ -43,7 +43,7 @@ export default function Header() {
             </Link>
           </div>
           <div className="inline-flex w-1/2 items-center justify-end">
-            <div className="hidden md:flex md:items-center md:gap-8">
+            <div className="hidden md:flex md:items-center md:gap-16">
               {navigations.map((navigation, index) => (
                 <TextLink
                   key={index}
