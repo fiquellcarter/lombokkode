@@ -44,9 +44,13 @@ function ScrollAreaScrollbar({
       data-slot="scroll-area-scrollbar"
       orientation={orientation}
       className={cn(
-        "pointer-events-none m-1 flex touch-none opacity-0 transition-opacity duration-200 ease-in-out",
-        "data-hovering:pointer-events-auto data-hovering:opacity-100",
-        "data-scrolling:pointer-events-auto data-scrolling:opacity-100",
+        // new: simplified for sanity
+        "flex touch-none",
+
+        // before: overengineered scrollbar era
+        // "pointer-events-none m-1 flex touch-none opacity-0 transition-opacity duration-200 ease-in-out",
+        // "data-hovering:pointer-events-auto data-hovering:opacity-100",
+        // "data-scrolling:pointer-events-auto data-scrolling:opacity-100",
         orientation === "vertical" ? "w-1.5 justify-center" : "h-1.5 justify-start",
         className
       )}

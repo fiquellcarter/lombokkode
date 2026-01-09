@@ -47,7 +47,7 @@ export default function OurPricing() {
             untuk hasil maksimal!
           </Text>
         </div>
-        <ScrollArea scrollbar={false} className="mb-8">
+        <ScrollArea className="mb-8">
           <div className="flex items-center gap-4 p-2 lg:justify-center">
             {pricings.map((pricing, index) => (
               <Button
