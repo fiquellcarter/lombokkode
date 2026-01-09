@@ -1,10 +1,17 @@
 import { Link } from "react-router";
 
 import Logo from "~/assets/logo.png?format=webp";
+import { Icon } from "~/components/shared/icon";
+import { Button } from "~/components/vorent/button";
 import { Heading } from "~/components/vorent/heading";
 import { Text, TextLink } from "~/components/vorent/text";
 import { site } from "~/config/site";
 import { navigations } from "~/data/navigations";
+
+const socials = [
+  { title: "TikTok", icon: Icon.tiktok, href: "https://www.tiktok.com/@lombokkode" },
+  { title: "Instagram", icon: Icon.instagram, href: "https://www.instagram.com/lombokkode" },
+];
 
 const prices = [
   { title: "Halaman Arahan", href: "#" },
@@ -21,7 +28,7 @@ export default function Footer() {
         <div className="mb-16 grid grid-cols-1 gap-16 md:grid-cols-3 lg:grid-cols-5">
           <div className="flex flex-col gap-6 md:col-span-3 lg:col-span-2">
             <div className="flex items-center gap-2 select-none">
-              <img src={Logo} alt="Logo" className="size-8" />
+              <img src={Logo} alt="Logo" className="size-10" />
               <Heading level={5}>
                 Lombok <span className="text-primary">Kode</span>
               </Heading>
@@ -30,6 +37,18 @@ export default function Footer() {
               Mitra digital terpercaya di Lombok. Membangun website premium yang estetik,
               fungsional, dan berdampak bagi pertumbuhan bisnis Anda.
             </Text>
+            <div className="flex items-center gap-2">
+              {socials.map((social, index) => (
+                <Button
+                  key={index}
+                  render={<Link to={social.href} target="_blank" rel="noopener noreferrer" />}
+                  variant="secondary"
+                  size="icon-sm"
+                  aria-label={social.title}>
+                  <social.icon />
+                </Button>
+              ))}
+            </div>
           </div>
           <div className="flex flex-col gap-6">
             <Heading level={6}>Layanan & Harga</Heading>
