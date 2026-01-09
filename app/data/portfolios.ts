@@ -1,8 +1,18 @@
+import ArunikaBatikRental from "~/assets/images/arunika-batik-rental.png?format=webp";
+import EclatFragranceHouse from "~/assets/images/eclat-fragrance-house.png?format=webp";
+import KencanaHeritageArchives from "~/assets/images/kencana-heritage-archives.png?format=webp";
+import LombokPhotoshoot from "~/assets/images/lombok-photoshoot.png?format=webp";
+import LombokPureTravel from "~/assets/images/lombok-pure-travel.png?format=webp";
+import LuxeBeauty from "~/assets/images/luxe-beauty.png?format=webp";
+import MuhHaerilAzmi from "~/assets/images/muh-haeril-azmi.png?format=webp";
+import NusantaraRentCar from "~/assets/images/nusantara-rent-car.png?format=webp";
+import WisataAceh from "~/assets/images/wisata-aceh.png?format=webp";
+
 export const portfolios = [
   {
     title: "Éclat Perfume",
     category: "Halaman Arahan",
-    image: "/images/eclat-fragrance-house.png",
+    image: EclatFragranceHouse,
     description:
       "Landing page parfum premium dengan desain mewah dan minimalis. Menampilkan detail produk, varian aroma, dan CTA pemesanan langsung via WhatsApp. Fokus pada branding eksklusif dan konversi penjualan.",
     link: "https://eclat-luxury-perfumes.vercel.app/",
@@ -10,7 +20,7 @@ export const portfolios = [
   {
     title: "Batik Kencana Heritage",
     category: "Toko Online",
-    image: "/images/kencana-heritage-archives.png",
+    image: KencanaHeritageArchives,
     description:
       "Website penyewaan Batik Tulis premium untuk UMKM. Dirancang dengan tampilan elegan, katalog produk eksklusif, serta integrasi WhatsApp untuk memudahkan proses pemesanan.",
     link: "https://kencana-heritage.vercel.app/",
@@ -18,7 +28,7 @@ export const portfolios = [
   {
     title: "Lombok Pure Travel",
     category: "Website Wisata & Tour",
-    image: "/images/lombok-pure-travel.png",
+    image: LombokPureTravel,
     description:
       "Website wisata dan tour Lombok dengan desain modern. Menampilkan paket perjalanan, aktivitas populer, serta tombol booking langsung via WhatsApp untuk meningkatkan pemesanan wisata.",
     link: "https://lombok-pure-travel.vercel.app/",
@@ -26,7 +36,7 @@ export const portfolios = [
   {
     title: "Nusantara Rent Car",
     category: "Halaman Arahan",
-    image: "/images/nusantara-rent-car.png",
+    image: NusantaraRentCar,
     description:
       "Landing page jasa rental mobil dengan tampilan profesional. Menampilkan daftar armada, keunggulan layanan, dan tombol booking instan melalui WhatsApp. Responsif di semua perangkat.",
     link: "https://nusantara-rent-car.vercel.app/",
@@ -34,7 +44,7 @@ export const portfolios = [
   {
     title: "Lombok Photoshoot",
     category: "Halaman Arahan",
-    image: "/images/lombok-photoshoot.png",
+    image: LombokPhotoshoot,
     description:
       "Website jasa fotografi premium di Lombok dengan desain visual modern. Menyajikan portofolio, pilihan paket foto, dan sistem pemesanan cepat melalui WhatsApp.",
     link: "https://lombok-photoshoot.vercel.app/",
@@ -42,7 +52,7 @@ export const portfolios = [
   {
     title: "Luxe & Beauty Premium Brand",
     category: "Toko Online",
-    image: "/images/luxe-beauty.png",
+    image: LuxeBeauty,
     description:
       "Landing page brand kecantikan & parfum dengan nuansa luxury modern. Dilengkapi katalog produk interaktif, integrasi WhatsApp, serta Admin Panel untuk manajemen produk dan konten.",
     link: "https://luxurybrand-two.vercel.app/",
@@ -50,7 +60,7 @@ export const portfolios = [
   {
     title: "Arunika Batik",
     category: "Halaman Arahan",
-    image: "/images/arunika-batik-rental.png",
+    image: ArunikaBatikRental,
     description:
       "Platform landing page penyewaan batik premium yang mengangkat warisan budaya Indonesia dengan sentuhan desain modern dan elegan.",
     link: "https://arunika-batik.vercel.app/",
@@ -58,7 +68,7 @@ export const portfolios = [
   {
     title: "Personal Portfolio",
     category: "Profil Perusahaan",
-    image: "/images/muh-haeril-azmi.png",
+    image: MuhHaerilAzmi,
     description:
       "Website portfolio pribadi untuk menampilkan karya, keahlian, dan layanan sebagai web developer. Desain modern, clean, dan responsif.",
     link: "https://muhhaerilazmi.vercel.app/",
@@ -66,7 +76,7 @@ export const portfolios = [
   {
     title: "Pariwisata Aceh",
     category: "Website Wisata & Tour",
-    image: "/images/wisata-aceh.png",
+    image: WisataAceh,
     description:
       "Website promosi pariwisata Aceh yang menampilkan destinasi unggulan, budaya, dan kuliner khas. Dirancang untuk menarik wisatawan dan meningkatkan minat berkunjung.",
     link: "https://pariwisata-aceh.vercel.app/",
