@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 
+import Logo from "~/assets/logo.png?format=webp";
 import { Heading } from "~/components/vorent/heading";
 import { Text, TextLink } from "~/components/vorent/text";
 import { site } from "~/config/site";
@@ -20,7 +21,7 @@ export default function Footer() {
         <div className="mb-16 grid grid-cols-1 gap-16 md:grid-cols-3 lg:grid-cols-5">
           <div className="flex flex-col gap-6 md:col-span-3 lg:col-span-2">
             <div className="flex items-center gap-2 select-none">
-              <img src="/logo.png" alt="Logo" className="size-8" />
+              <img src={Logo} alt="Logo" className="size-8" />
               <Heading level={5}>
                 Lombok <span className="text-primary">Kode</span>
               </Heading>

@@ -2,6 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router";
 
+import Logo from "~/assets/logo.png?format=webp";
 import { Button } from "~/components/vorent/button";
 import { Heading } from "~/components/vorent/heading";
 import { TextLink } from "~/components/vorent/text";
@@ -16,7 +17,7 @@ export default function Header() {
         <nav className="flex min-h-16 w-full items-center py-4">
           <div className="inline-flex w-1/2 items-center justify-start">
             <div className="flex items-center gap-2 select-none">
-              <img src="/logo.png" alt="Logo" className="size-8" />
+              <img src={Logo} alt="Logo" className="size-8" />
               <Heading level={5}>
                 Lombok <span className="text-primary">Kode</span>
               </Heading>
