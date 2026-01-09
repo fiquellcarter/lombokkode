@@ -126,7 +126,7 @@ export default function OurPortfolio() {
                               />
                             }>
                             Hubungi via WhatsApp
-                            <Icon.whatsapp className="fill-current" />
+                            <Icon.whatsapp />
                           </Button>
                         </div>
                       </div>
