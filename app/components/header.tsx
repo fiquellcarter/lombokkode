@@ -28,7 +28,7 @@ export default function Header() {
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 bg-background transition-[border] duration-200 ease-in-out",
-        isScrolled ? "border-b" : "border-transparent"
+        isScrolled ? "border-b" : "border-b-transparent"
       )}>
       <div className="container">
         <nav className="flex min-h-16 w-full items-center py-4">
