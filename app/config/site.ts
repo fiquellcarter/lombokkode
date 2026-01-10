@@ -36,6 +36,6 @@ export const site = {
   },
   contact: {
     email: "lombokkode@gmail.com",
-    phone: "6287765936377", // Keep this phone number in sync with `footer.tsx` (line 76).
+    phone: "6285708991581", // keep this phone number in sync with `footer.tsx` (line 76)
   },
 };

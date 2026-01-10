@@ -93,7 +93,7 @@ export default function Footer() {
               </li>
               <li>
                 <TextLink render={<Link to={`tel:${site.contact.phone}`} />}>
-                  +62 877-6593-6377
+                  +62 857-0899-1581
                 </TextLink>
               </li>
             </ul>
