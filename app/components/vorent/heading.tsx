@@ -20,9 +20,9 @@ export const headingVariants = cva("font-semibold tracking-tight text-pretty", {
   },
 });
 
-export type HeadingSize = NonNullable<VariantProps<typeof headingVariants>["size"]>;
+type HeadingSize = NonNullable<VariantProps<typeof headingVariants>["size"]>;
 
-export const levelToSizeMap: Record<1 | 2 | 3 | 4 | 5 | 6, HeadingSize> = {
+const levelToSizeMap: Record<1 | 2 | 3 | 4 | 5 | 6, HeadingSize> = {
   1: "xxxl",
   2: "xxl",
   3: "xl",
