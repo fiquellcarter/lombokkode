@@ -12,6 +12,7 @@ import type { Route } from "./+types/root";
 
 import "~/app.css";
 
+import { GoogleAnalytics } from "~/components/shared/ga";
 import { Heading } from "~/components/vorent/heading";
 import { Text } from "~/components/vorent/text";
 import { site } from "~/config/site";
@@ -67,6 +68,7 @@ export function Layout({ children }: React.PropsWithChildren) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        <GoogleAnalytics gaId="G-MJTZ6HSQJF" />
       </head>
       <body>
         <div className="root">{children}</div>
