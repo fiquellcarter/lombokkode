@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Check } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router";
 
 import { Button } from "~/components/vorent/button";
 import {
@@ -16,10 +17,36 @@ import { ScrollArea } from "~/components/vorent/scroll-area";
 import { Small, Text } from "~/components/vorent/text";
 import { site } from "~/config/site";
 import { pricings } from "~/data/pricings";
-import { cn } from "~/lib/utils";
+import { cn, toSlug } from "~/lib/utils";
 
 export default function OurPricing() {
-  const [activePricing, setActivePricing] = useState(pricings[0].title);
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const layananParam = searchParams.get("layanan");
+
+  const [activePricing, setActivePricing] = useState(() => {
+    if (layananParam) {
+      const found = pricings.find((pricing) => toSlug(pricing.title) === layananParam);
+
+      if (found) {
+        return found.title;
+      }
+    }
+
+    return pricings[0].title;
+  });
+
+  const handleSelectPricing = (title: string) => {
+    setActivePricing(title);
+    setSearchParams(
+      (params) => {
+        params.set("layanan", toSlug(title));
+
+        return params;
+      },
+      { preventScrollReset: true }
+    );
+  };
 
   const currentPricing = pricings.find((pricing) => pricing.title === activePricing) || pricings[0];
 
@@ -29,6 +56,16 @@ export default function OurPricing() {
 
     window.open(url, "_blank");
   };
+
+  useEffect(() => {
+    if (layananParam) {
+      const found = pricings.find((pricing) => toSlug(pricing.title) === layananParam);
+
+      if (found) {
+        setActivePricing(found.title);
+      }
+    }
+  }, [layananParam]);
 
   return (
     <section
@@ -53,7 +90,7 @@ export default function OurPricing() {
               <Button
                 key={index}
                 variant={activePricing === pricing.title ? "primary" : "outline"}
-                onClick={() => setActivePricing(pricing.title)}>
+                onClick={() => handleSelectPricing(pricing.title)}>
                 {pricing.title}
               </Button>
             ))}

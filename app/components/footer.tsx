@@ -7,19 +7,18 @@ import { Heading } from "~/components/vorent/heading";
 import { Text, TextLink } from "~/components/vorent/text";
 import { site } from "~/config/site";
 import { navigations } from "~/data/navigations";
+import { pricings } from "~/data/pricings";
+import { toSlug } from "~/lib/utils";
 
 const socials = [
   { title: "TikTok", icon: Icon.tiktok, href: "https://www.tiktok.com/@lombokkode" },
   { title: "Instagram", icon: Icon.instagram, href: "https://www.instagram.com/lombokkode" },
 ];
 
-const prices = [
-  { title: "Halaman Arahan", href: "#" },
-  { title: "Profil Perusahaan", href: "#" },
-  { title: "Toko Online", href: "#" },
-  { title: "Website Wisata & Tour", href: "#" },
-  { title: "Jasa Optimasi SEO", href: "#" },
-];
+const prices = pricings.map((pricing) => ({
+  title: pricing.title,
+  href: `/?layanan=${toSlug(pricing.title)}#pricing`,
+}));
 
 export default function Footer() {
   return (
