@@ -1,6 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Check } from "lucide-react";
-import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router";
 
 import { Button } from "~/components/vorent/button";
@@ -22,25 +21,15 @@ import { cn, toSlug } from "~/lib/utils";
 export default function OurPricing() {
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const layananParam = searchParams.get("layanan");
-
-  const [activePricing, setActivePricing] = useState(() => {
-    if (layananParam) {
-      const found = pricings.find((pricing) => toSlug(pricing.title) === layananParam);
-
-      if (found) {
-        return found.title;
-      }
-    }
-
-    return pricings[0].title;
-  });
+  const serviceParam = searchParams.get("service");
+  const found = pricings.find((pricing) => toSlug(pricing.title) === serviceParam);
+  const currentPricing = found || pricings[0];
+  const activePricing = currentPricing.title;
 
   const handleSelectPricing = (title: string) => {
-    setActivePricing(title);
     setSearchParams(
       (params) => {
-        params.set("layanan", toSlug(title));
+        params.set("service", toSlug(title));
 
         return params;
       },
@@ -48,24 +37,12 @@ export default function OurPricing() {
     );
   };
 
-  const currentPricing = pricings.find((pricing) => pricing.title === activePricing) || pricings[0];
-
   const handleSelectPlan = (name: string) => {
     const message = `Halo kak, saya tertarik dengan layanan ${currentPricing.title} (${name}). Mohon info detailnya ya. Terima kasih.`;
     const url = `https://wa.me/${site.contact.phone}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
   };
-
-  useEffect(() => {
-    if (layananParam) {
-      const found = pricings.find((pricing) => toSlug(pricing.title) === layananParam);
-
-      if (found) {
-        setActivePricing(found.title);
-      }
-    }
-  }, [layananParam]);
 
   return (
     <section

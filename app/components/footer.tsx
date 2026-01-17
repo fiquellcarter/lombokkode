@@ -17,7 +17,7 @@ const socials = [
 
 const prices = pricings.map((pricing) => ({
   title: pricing.title,
-  href: `/?layanan=${toSlug(pricing.title)}#pricing`,
+  href: `/?service=${toSlug(pricing.title)}#pricing`,
 }));
 
 export default function Footer() {
