@@ -48,9 +48,9 @@ export function TestimoniMedia({ className, ...props }: React.ComponentProps<"di
   );
 }
 
-export function TestimoniTitle({ className, ...props }: React.ComponentProps<"h5">) {
+export function TestimoniTitle({ className, ...props }: React.ComponentProps<"h4">) {
   return (
-    <h5
+    <h4
       data-slot="testimoni-title"
       className={cn(headingVariants({ size: "md" }), className)}
       {...props}

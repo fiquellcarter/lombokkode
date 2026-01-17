@@ -29,7 +29,7 @@ export default function Footer() {
           <div className="flex flex-col gap-6 md:col-span-3 lg:col-span-2">
             <div className="flex items-center gap-2 select-none">
               <img src={Logo} alt="Logo" className="size-10" />
-              <Heading level={5}>
+              <Heading level={2} size="md">
                 Lombok <span className="text-primary">Kode</span>
               </Heading>
             </div>
@@ -51,7 +51,9 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col gap-6">
-            <Heading level={6}>Layanan & Harga</Heading>
+            <Heading level={3} size="sm">
+              Layanan & Harga
+            </Heading>
             <ul className="flex flex-col gap-4 text-muted-foreground">
               {prices.map((price, index) => (
                 <li key={index}>
@@ -61,7 +63,9 @@ export default function Footer() {
             </ul>
           </div>
           <div className="flex flex-col gap-6">
-            <Heading level={6}>Menu Utama</Heading>
+            <Heading level={3} size="sm">
+              Menu Utama
+            </Heading>
             <ul className="flex flex-col gap-4 text-muted-foreground">
               {navigations.map((navigation, index) => (
                 <li key={index}>
@@ -71,7 +75,9 @@ export default function Footer() {
             </ul>
           </div>
           <div className="flex flex-col gap-6">
-            <Heading level={6}>Hubungi Kami</Heading>
+            <Heading level={3} size="sm">
+              Hubungi Kami
+            </Heading>
             <ul className="flex flex-col gap-4 text-muted-foreground">
               <li>
                 <TextLink render={<Link to={`mailto:${site.contact.email}`} />}>

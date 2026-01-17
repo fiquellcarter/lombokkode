@@ -41,9 +41,9 @@ export function CardIcon({ className, ...props }: React.ComponentProps<"div">) {
   );
 }
 
-export function CardTitle({ className, ...props }: React.ComponentProps<"h5">) {
+export function CardTitle({ className, ...props }: React.ComponentProps<"h4">) {
   return (
-    <h5
+    <h4
       data-slot="card-title"
       className={cn(headingVariants({ size: "md" }), className)}
       {...props}
