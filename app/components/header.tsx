@@ -36,7 +36,7 @@ export default function Header() {
             <Link to="/">
               <div className="flex items-center gap-2 select-none">
                 <img src={Logo} alt="Logo" className="size-8" />
-                <Heading level={5}>
+                <Heading level={2} size="md">
                   Lombok <span className="text-primary">Kode</span>
                 </Heading>
               </div>
