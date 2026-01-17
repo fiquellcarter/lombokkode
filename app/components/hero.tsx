@@ -35,7 +35,7 @@ export default function Hero() {
               digital dengan website yang elegan, cepat, dan mudah dikelola.
             </Text>
             <div className="flex flex-col items-center justify-center gap-4 md:flex-row lg:justify-start">
-              <Button render={<Link to="#cta" />} size="lg">
+              <Button render={<Link to="#contact" />} size="lg">
                 Konsultasi Gratis Sekarang
                 <MessageCircleMore />
               </Button>

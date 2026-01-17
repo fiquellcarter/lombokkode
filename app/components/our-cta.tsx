@@ -7,7 +7,7 @@ import { site } from "~/config/site";
 
 export default function OurCTA() {
   return (
-    <section id="cta" className="relative bg-secondary py-32">
+    <section id="contact" className="relative bg-secondary py-32">
       <div className="container max-w-3xl text-center">
         <div className="mb-16 flex flex-col gap-8">
           <Heading className="text-primary">Siap Transformasi Digital?</Heading>

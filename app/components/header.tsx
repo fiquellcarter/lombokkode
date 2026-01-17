@@ -52,7 +52,7 @@ export default function Header() {
                   {navigation.title}
                 </TextLink>
               ))}
-              <Button render={<Link to="#cta" />}>Konsultasi</Button>
+              <Button render={<Link to="#contact" />}>Konsultasi</Button>
             </div>
             <div className="md:hidden">
               <Button
@@ -75,7 +75,7 @@ export default function Header() {
                 {navigation.title}
               </TextLink>
             ))}
-            <Button render={<Link to="#cta" />} onClick={() => setIsOpen(!isOpen)}>
+            <Button render={<Link to="#contact" />} onClick={() => setIsOpen(!isOpen)}>
               Konsultasi
             </Button>
           </div>
